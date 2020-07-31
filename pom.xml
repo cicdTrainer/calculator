@@ -14,6 +14,20 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <distributionManagement>
+    <repository>
+     <id>central</id>
+     <name>libs-release</name>
+     <url>http://localhost-artifect.com/artifactory/libs-release</url>
+    </repository>
+    <repository>
+     <id>snapshots</id>
+     <name>libs-snapshot</name>
+     <url>http://localhost-artifect.com/artifactory/libs-snapshot</url>
+    </repository>
+  </distributionManagement>
+  
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
