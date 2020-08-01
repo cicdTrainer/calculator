@@ -1,3 +1,13 @@
+Seting up jenkin user password:
+===============================
+1- sudo su
+2- passwd jenkins
+3- set the <password>
+4- exit
+5- su - jenkins 
+6- supply <password>
+
+
 Setup to setup Eclipse in Ubuntu Lab:
 1- Open browser: search for eclipse dwonload
 2- Open terminal
