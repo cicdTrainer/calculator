@@ -256,7 +256,8 @@ Setup the Artifactory plugin in project's pom.xml file
   </profiles>   
   
  
-  8. mvn clean verify sonar:sonar
+ 9. mvn clean verify sonar:sonar
+ 10. If above goal successfully run, then it will produce code analysis report URLs. 
   
             
 
