@@ -18,12 +18,12 @@
     <repository>
      <id>central</id>
      <name>libs-release</name>
-     <url>http://localhost-artifect.com/artifactory/libs-release</url>
+     <url>http://localhost:8081/artifactory/libs-release</url>
     </repository>
     <snapshotRepository>
      <id>snapshots</id>
      <name>libs-snapshot</name>
-     <url>http://localhost-artifect.com/artifactory/libs-snapshot</url>
+     <url>http://localhost:8081/artifactory/libs-snapshot</url>
     </snapshotRepository>
   </distributionManagement>
   
