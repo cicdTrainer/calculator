@@ -72,7 +72,12 @@ Setup to setup Eclipse in Ubuntu Lab:
                        ‣ 30809 /home/ubuntu/Downloads/artifactory-pro-7.6.3/app/third-party/
 10- Open JFrog UI
       http://localhost:8081 [copy in broser and hit]
-11- Public key: https://api.bintray.com/orgs/jfrog/keys/gpg/public.key 
+11- UI login
+      username: admin
+      password: password
+12- Reste the admin password as 12345678 [use simple one for testing]
+
+13- Public key: https://api.bintray.com/orgs/jfrog/keys/gpg/public.key 
 mQGiBFICOY4RBADcL9qr50XhClS0yjpKipFKVaUutu7gFXeJdrNbMD3Dn9u0MH2R
 SDg2X8V7fH6UgpRxCKAijEjWohd3TfDv8Hlbdr2w9590GTsF71VqnXXXQIQRVedS
 tSWiPs+nmCrh5sokWQISgYU/iseDb+jqhwxEEflNXxcYKfCW5UL7GKypiwCgt0az
