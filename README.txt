@@ -98,3 +98,13 @@ aG0zM3ZNaGs2azdTYzVRMmc9PQp2ZXJzaW9uOiAxCg==
 15- Skip `proxy configuration`
 
 16- Create Repository, choose -> `maven` [Click on Finish]
+
+=================================
+JFrog and Maven Integration Steps
+=================================
+1- Top right conrner -> `Set me up` button. Please click on that
+2- Choose Tool as -> `maven`
+3- Choose credential -> `admin`
+4- Click on `Generate Maven settings`
+5- Click on `Generate Settings`
+
