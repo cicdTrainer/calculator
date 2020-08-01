@@ -165,9 +165,9 @@ Setup the Artifactory plugin in project's pom.xml file
     </snapshotRepository>
   </distributionManagement>
   
-  =======
+  ==============================================
   Setup and test Artifactory Server connectivity
-  =============================================
+  ==============================================
   1- Open Jenkins UI
   2- Go to Manage jenkin
   3- Go to Configure System
@@ -178,6 +178,11 @@ Setup the Artifactory plugin in project's pom.xml file
             4.3.1 username: admin
             4.3.2 password: 123456
                   [Test connection hit]
-      
+   
+  =================
+  Setup Sonar qube
+  =================
+  1. Go to this page: https://docs.sonarqube.org/latest/setup/get-started-2-minutes/
+  2. Download form here: https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.8.zip
       
 
