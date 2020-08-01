@@ -56,6 +56,21 @@ Setup to setup Eclipse in Ubuntu Lab:
 
             Check Artifactory status with:
             > systemctl status artifactory.service
+8- Run Jfrog service:
+      systemctl start artifactory.service
+9- Check Service status:
+      sudo systemctl status artifactory.service
+      output>   artifactory.service - Artifactory service
+               Loaded: loaded (/lib/systemd/system/artifactory.service; enabled; vendor pres
+               Active: active (running) since Sat 2020-08-01 06:21:27 UTC; 31s ago
+               Process: 28839 ExecStart=/home/ubuntu/Downloads/artifactory-pro-7.6.3/app/bin/
+               Main PID: 30809 (java)
+                Tasks: 0
+               Memory: 120.0K
+                  CPU: 2.467s
+               CGroup: /system.slice/artifactory.service
+                       ‣ 30809 /home/ubuntu/Downloads/artifactory-pro-7.6.3/app/third-party/
+
 
 
 
