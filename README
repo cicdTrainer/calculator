@@ -164,6 +164,20 @@ Setup the Artifactory plugin in project's pom.xml file
      <url>http://localhost:8081/artifactory/libs-snapshot</url>
     </snapshotRepository>
   </distributionManagement>
+  
+  =======
+  Setup and test Artifactory Server connectivity
+  =============================================
+  1- Open Jenkins UI
+  2- Go to Manage jenkin
+  3- Go to Configure System
+  4- JFrog Artifactory section
+      4.1 name: JFrog
+      4.2 Aritfactory Server: http://localhostL:8081/artifactory
+      4.3 Default cridential
+            4.3.1 username: admin
+            4.3.2 password: 123456
+                  [Test connection hit]
       
       
 
