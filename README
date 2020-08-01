@@ -79,7 +79,7 @@ Setup to setup Eclipse in Ubuntu Lab:
       password: password
 12- Reste the admin password as 12345678 [use simple one for testing]
 
-13- Public key: https://api.bintray.com/orgs/jfrog/keys/gpg/public.key 
+13- Copy & Paste below public key in  license box in UI. [Or please fallow the step one for proper free-trail key which will come into your supplied mail id while regiration.]
 cHJvZHVjdHM6CiAgYXJ0aWZhY3Rvcnk6CiAgICBwcm9kdWN0OiBaWGh3YVhKbGN6b2dNakF5TUMw
 d09DMHpNRlF4T0RvMU5qb3hOeTR5TnpCYUNtbGtPaUJsTWpCbFpEVXdZUzFpTnpreExUUXhNek10
 T1dKalpTMWxOVGxpTnpaak1XVTNOak1LYjNkdVpYSTZJRlJ5WVdsdWFXNW5DbkJ5YjNCbGNuUnBa
@@ -92,5 +92,11 @@ WWlFbkVWV0h3WE1USEUrUUdDUEpWZEVyQTU1Q0RzY0ErTjRSWVFyTnNibng0MzN2YUtpYzdRbnI0
 YmE2VGxJNWw1NFFwRzFTTzQyRGZWQUxRUXpFOWNON2twM3JCZ3kwcTlDNGNRYUNMZGZFU1c5VlRm
 U0M4TEduTXVWMTNrbnFydmpqK0R0YWNFUUlYRkxXbXIrMkJtdHo1RUFXSEtJVVFrMkVwYVJkUDFE
 QkNENzR4MFVwQnRUdz09CnZlcnNpb246IDEK
+
+14- Skip `base url setting` 
+
+15- Skip `proxy configuration`
+
+16- Create Repository, choose -> `maven` [Click on Finish]
 
 
