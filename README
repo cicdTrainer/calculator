@@ -146,7 +146,24 @@ JFrog and Maven Integration Steps
       7.3 sudo cp settings.xml /var/lib/jenkins/.m2/
       7.4 sudo chgrp jenkins /var/lib/jenkins/.m2/settings.xml
       7.5 sudo chown jenkins /var/lib/jenkins/.m2/settings.xml
-      
+
+
+======================================================
+Setup the Artifactory plugin in project's pom.xml file 
+======================================================
+
+<distributionManagement>
+    <repository>
+     <id>central</id>
+     <name>libs-release</name>
+     <url>http://localhost:8081/artifactory/libs-release</url>
+    </repository>
+    <snapshotRepository>
+     <id>snapshots</id>
+     <name>libs-snapshot</name>
+     <url>http://localhost:8081/artifactory/libs-snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
       
       
 
