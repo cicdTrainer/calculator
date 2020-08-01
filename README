@@ -279,9 +279,18 @@ Setup the Artifactory plugin in project's pom.xml file
             <Connector port="7080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="7443" />
- 6- Run from terminal
+ 6- vi conf/tomcat-users.xml     [add the below roles and admin password in <tomcat-users> xml tag]
+        <role rolename="manager-gui"/>
+        <role rolename="manager-script"/>
+        <role rolename="manager-jmx"/>
+        <role rolename="manager-status"/>
+        <role rolename="admin-gui"/>
+        <role rolename="admin-script"/>
+        <user username="admin" password="admin" roles="manager-gui,manager-script,manager-jmx,manager-status,admin-gui,admin-script"/>
+
+ 7- Run from terminal
       bin/start.sh
- 7- Go to browser, http://localhost:7080 and hit. 
+ 8- Go to browser, http://localhost:7080 and hit. 
   
             
 
