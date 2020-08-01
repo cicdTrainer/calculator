@@ -151,7 +151,7 @@ JFrog and Maven Integration Steps
 ======================================================
 Setup the Artifactory plugin in project's pom.xml file 
 ======================================================
-
+1- Add the below section inside the <project> xml tag:
 <distributionManagement>
     <repository>
      <id>central</id>
