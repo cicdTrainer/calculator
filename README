@@ -189,10 +189,74 @@ Setup the Artifactory plugin in project's pom.xml file
             password- admin
   5. Generate Token: Analyze "com.simplilearn:calculator": 41da3cb9c67b35100c99fee9e89d97a28e18b1a8
   6. Fallow the configuration setup, shown in UI
-  7. mvn sonar:sonar \
-        -Dsonar.projectKey=com.simplilearn:calculator \
-        -Dsonar.host.url=http://localhost:9000 \
-        -Dsonar.login=41da3cb9c67b35100c99fee9e89d97a28e18b1a8
+  7. Add the below profile in settings.xml
+       <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.host.url>
+                  http://localhost:9000
+                </sonar.host.url>
+            </properties>
+        </profile>
+  8. Add Plugins in porject's pom.xml inside the <project> xml tag:
+   <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>3.6.0.1398</version>
+        </plugin>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>0.8.4</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>coverage</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>prepare-agent</id>
+                <goals>
+                  <goal>prepare-agent</goal>
+                </goals>
+              </execution>
+              <execution>
+                <id>report</id>
+                <goals>
+                  <goal>report</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>   
+  
+ 
+  8. mvn clean verify sonar:sonar
   
             
 
