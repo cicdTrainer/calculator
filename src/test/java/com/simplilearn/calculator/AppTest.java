@@ -33,8 +33,8 @@ public class AppTest
      */
     public void testDevisionByTwoPositiveNumbers()
     {
-    	double result = App.division(20, 10);
-        assertEquals(2.0, result);
+    	double result = App.division(30, 10);
+        assertEquals(3.0, result);
     }
     
     public void testDevisionByZero() {
