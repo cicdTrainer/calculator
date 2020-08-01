@@ -184,6 +184,10 @@ Setup the Artifactory plugin in project's pom.xml file
   =================
   1. Go to this page: https://docs.sonarqube.org/latest/setup/get-started-2-minutes/
   2. Download form here: https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.8.zip
+      In Terminal:
+      2.1 tar -xvf sonarqube-7.8.zip
+      2.2 cd /home/ubuntu/Downloads/sonarqube-7.8/bin/linux-x86-64
+      2.3 ./sonar.sh console
   3. Go to browser: http://localhost:9000
   4. Login: username- admin
             password- admin
@@ -258,6 +262,13 @@ Setup the Artifactory plugin in project's pom.xml file
  
  9. mvn clean verify sonar:sonar
  10. If above goal successfully run, then it will produce code analysis report URLs. 
+ 
+ 
+ ========================
+ Setup Web Server: Tomcat
+ ========================
+ 1- Download: http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.57.tar.gz
+ 2- 
   
             
 
