@@ -107,4 +107,23 @@ JFrog and Maven Integration Steps
 3- Choose credential -> `admin`
 4- Click on `Generate Maven settings`
 5- Click on `Generate Settings`
+6- Click on `generate snippet` -> It will download the settings.xml file in /home/ubuntu/Downloads/ directory
+7- Open terminal
+      7.1 cd Downloads
+      7.2 open settings.xml file and update the JFrog's admin password in it.
+            <servers>
+                <server>
+                  <username>admin</username>
+                  <password>12345678</password>
+                  <id>central</id>
+                </server>
+                <server>
+                  <username>admin</username>
+                  <password>12345678</password>
+                  <id>snapshots</id>
+                </server>
+            </servers>
 
+      7.3 sudo cp settings.xml /var/lib/jenkins/.m2/
+      7.4 sudo chgrp jenkins /var/lib/jenkins/.m2/settings.xml
+      7.5 sudo chown jenkins /var/lib/jenkins/.m2/settings.xml
