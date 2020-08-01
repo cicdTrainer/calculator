@@ -1,1 +1,14 @@
-It is a calculator project for CI/CD testing.
+Setup to setup Eclipse in Ubuntu Lab:
+1- Open browser: search for eclipse dwonload
+2- Open terminal
+      uname -a
+      output> x86_64 ~ 64 bit OS
+3- Download url https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-06/R/eclipse-inst-linux64.tar.gz  [copy to broser and hit download button]
+4- In terminal
+    4.1  cd Downloads
+    4.2  ls -lrt
+         > eclipse-inst-linux64.tar.gz [last file in rsult of above command]
+    4.3 tar -xvf eclipse-inst-linux64.tar.gz [extract the tar file]
+    4.4 cd eclipse-installer
+    4.5 ./eclipse-inst  [it will open a GUI based installation window, just fallow the default conf. ]
+    4.6 
