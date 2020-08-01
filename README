@@ -184,5 +184,15 @@ Setup the Artifactory plugin in project's pom.xml file
   =================
   1. Go to this page: https://docs.sonarqube.org/latest/setup/get-started-2-minutes/
   2. Download form here: https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.8.zip
-      
+  3. Go to browser: http://localhost:9000
+  4. Login: username- admin
+            password- admin
+  5. Generate Token: Analyze "com.simplilearn:calculator": 41da3cb9c67b35100c99fee9e89d97a28e18b1a8
+  6. Fallow the configuration setup, shown in UI
+  7. mvn sonar:sonar \
+        -Dsonar.projectKey=com.simplilearn:calculator \
+        -Dsonar.host.url=http://localhost:9000 \
+        -Dsonar.login=41da3cb9c67b35100c99fee9e89d97a28e18b1a8
+  
+            
 
