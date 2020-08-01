@@ -92,3 +92,9 @@ eklzakdpMEk2dy9rS0FvMXRlOFI2NnFZbFo2R3NXanV1ZEZDWlA0VmdoMjgzOXhoRXZ3ZkgrTmVw
 V1pOYlh6Wm15VHZsVmZmQzVYTlROM3Nzb2c5RElTd2FNNnloajhVRjN3eHFxKzZ6LzdYWFBPNXkz
 T2FNYURuaUJlUW1wbEVDb3FrMXBWOTVOb2wyVFo2dkFIR05YNFhlaXFmeEFReXNQQXF1VTJzdkw4
 aG0zM3ZNaGs2azdTYzVRMmc9PQp2ZXJzaW9uOiAxCg==
+
+14- Skip `base url setting` 
+
+15- Skip `proxy configuration`
+
+16- Create Repository, choose -> `maven` [Click on Finish]
