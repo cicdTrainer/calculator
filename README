@@ -268,7 +268,18 @@ Setup the Artifactory plugin in project's pom.xml file
  Setup Web Server: Tomcat
  ========================
  1- Download: http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.57.tar.gz
- 2- 
+ 2- cd Downloads
+ 3- tar -xvf apache-tomcat-8.5.57.tar.gz
+ 4- cd apache-tomcat-8.5.57
+ 5- vi conf/server.xml [Change all ports]
+      5.1 Replace 8005 to 7005
+            <Server port="7005" shutdown="SHUTDOWN">
+                  <Listener className="org.apache.catalina.startup.VersionLoggerListener" />
+      5.2 Replace 8080 to 7080 and 8443 to 7443
+            <Connector port="7080" protocol="HTTP/1.1"
+               connectionTimeout="20000"
+               redirectPort="7443" />
+      
   
             
 
