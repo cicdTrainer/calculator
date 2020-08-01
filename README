@@ -36,6 +36,15 @@ Setup to setup Eclipse in Ubuntu Lab:
                                                                                     > Artifact Id: jfrog-demo
                                                                                           > [Finish]
                                                                                           
+======================================================
+Plugins required for Maven and Artifactory Integration
+======================================================
+Plugins Installation:
+- Artifactory
+- Maven Integration
+- Maven Invoker
+- Publish Over SSH 
+                                                                                          
 ===================================
  Setup to install JFrog Artifactory
 ===================================
