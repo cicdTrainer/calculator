@@ -70,6 +70,8 @@ Setup to setup Eclipse in Ubuntu Lab:
                   CPU: 2.467s
                CGroup: /system.slice/artifactory.service
                        ‣ 30809 /home/ubuntu/Downloads/artifactory-pro-7.6.3/app/third-party/
+10- Open JFrog UI
+      http://localhost:8081 [copy in broser and hit]
 
 
 
