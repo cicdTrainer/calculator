@@ -41,6 +41,8 @@ Setup to setup Eclipse in Ubuntu Lab:-
  Setup to install JFrog Artifactory
 ===================================
 1- Search for: JFrog Artifactory Install 
+[https://jfrog.com/artifactoray/free-trial/?utm_source=google&utm_medium=cpc&utm_campaign={campaign}&gclid=EAIaIQobChMI9t3n7Kv56gIVQSUrCh3qcQhdEAAYASABEgJC5PD_BwE]
+
 2- Download link: https://api.bintray.com/content/jfrog/artifactory-pro/org/artifactory/pro/jfrog-artifactory-pro/$latest/jfrog-artifactory-pro-$latest-linux.tar.gz?bt_package=jfrog-artifactory-pro
 3- cd Downloads
 [All cmd run in terminal]
@@ -53,10 +55,10 @@ Setup to setup Eclipse in Ubuntu Lab:-
             Installation of Artifactory completed
 
             Start Artifactory with:
-            >sudo systemctl start artifactory.service
+            > systemctl start artifactory.service
 
             Check Artifactory status with:
-            >sudo systemctl status artifactory.service
+            > systemctl status artifactory.service
 8- Run Jfrog service:
       systemctl start artifactory.service
 9- Check Service status:
@@ -71,4 +73,9 @@ Setup to setup Eclipse in Ubuntu Lab:-
                   CPU: 2.467s
                CGroup: /system.slice/artifactory.service
                        ‣ 30809 /home/ubuntu/Downloads/artifactory-pro-7.6.3/app/third-party/
-		       
+10- Open JFrog UI
+      http://localhost:8081 [copy in broser and hit]
+11- UI login
+      username: admin
+      password: password
+12- Rest the admin password as 12345678 [use simple one for testing]
