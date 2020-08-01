@@ -37,3 +37,25 @@ Setup to setup Eclipse in Ubuntu Lab:-
                                                                                     > Artifact Id: jfrog-demo
                                                                                           > [Finish]                                                                                     
 ====================================================================================================================================
+===================================
+ Setup to install JFrog Artifactory
+===================================
+1- Search for: JFrog Artifactory Install 
+2- Download link: https://api.bintray.com/content/jfrog/artifactory-pro/org/artifactory/pro/jfrog-artifactory-pro/$latest/jfrog-artifactory-pro-$latest-linux.tar.gz?bt_package=jfrog-artifactory-pro
+3- cd Downloads
+[All cmd run in terminal]
+4- tar -xvf jfrog-artifactory-pro-7.6.3-linux.tar.gz 
+5- cd artifactory-pro-7.6.3
+6- cd app/bin
+7- sudo ./installService.sh 
+      output> 
+            ************ SUCCESS ****************
+            Installation of Artifactory completed
+
+            Start Artifactory with:
+            >sudo systemctl start artifactory.service
+
+            Check Artifactory status with:
+            >sudo systemctl status artifactory.service
+			
+
