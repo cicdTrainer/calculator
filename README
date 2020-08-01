@@ -279,7 +279,9 @@ Setup the Artifactory plugin in project's pom.xml file
             <Connector port="7080" protocol="HTTP/1.1"
                connectionTimeout="20000"
                redirectPort="7443" />
-      
+ 6- Run from terminal
+      bin/start.sh
+ 7- Go to browser, http://localhost:7080 and hit. 
   
             
 
