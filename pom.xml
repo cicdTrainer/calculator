@@ -45,7 +45,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
         </plugin>
-        <plugin>
+        <!--plugin>
           <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
           <version>3.6.0.1398</version>
@@ -54,12 +54,12 @@
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
           <version>0.8.4</version>
-        </plugin>
+        </plugin-->
       </plugins>
     </pluginManagement>
   </build>
 
-  <profiles>
+  <!--profiles>
     <profile>
       <id>coverage</id>
       <activation>
@@ -88,5 +88,5 @@
         </plugins>
       </build>
     </profile>
-  </profiles>
+  </profiles-->
 </project>
