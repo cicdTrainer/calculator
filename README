@@ -1,3 +1,12 @@
+Maven Home path set in Jenkins:
+==============================
+1- Go to Manage Jenkins
+2- Got to Gobal configuration
+3- Go Maven Installation
+    3.1- Uncheck auto installation
+    3.2- Set a name like "maven"
+    3.3 Set MAVEN_HOME=/usr/share/maven/
+
 ======================
 Maven build Life Cycle:
 ======================
