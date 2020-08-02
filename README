@@ -310,8 +310,10 @@ Setup the Artifactory plugin in project's pom.xml file
         <role rolename="admin-script"/>
         <user username="admin" password="admin" roles="manager-gui,manager-script,manager-jmx,manager-status,admin-gui,admin-script"/>
 
- 7- Run from terminal
-      bin/start.sh
+ 7- Run from terminal  
+      7.1 cd /home/ubuntu/Downloads/apache-tomcat-8.5.57 [your untar location]
+      7.2 ./bin/startup.sh [to start tomcat]
+      7.3 ./bin/shutdown.sh [to stop tomcat]
  8- Go to browser, http://localhost:7080 and hit. 
   
             
