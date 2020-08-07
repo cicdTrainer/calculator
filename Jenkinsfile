@@ -43,10 +43,4 @@ node {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean deploy/)
       }
    }
-   stage('Deploy') {
-       sh 'curl -u admin:admin -T target/**.war "http://127.0.0.1:7080/manager/text/deploy?path=/devops&update=true"'
-   }
-   stage("Smoke Test"){
-       sh "curl --retry-delay 10 --retry 5 http://http://127.0.0.1:7080/spring-boot-web-app"
-   } 
 }
