@@ -1,3 +1,10 @@
+Jenkin Service Status:
+=====================
+1- sudo systemctl status jenkins
+    1.1- If it is not running
+        1.1.1 sudo systemctl start jenkins
+        
+==============================
 Maven Home path set in Jenkins:
 ==============================
 1- Go to Manage Jenkins
