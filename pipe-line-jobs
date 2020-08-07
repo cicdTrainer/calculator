@@ -1,7 +1,7 @@
 node {
    def mvnHome
    stage('Prepare') {
-      git url: 'git@github.com:cicdTrainer/calculator.git', branch: 'master'
+      git 'https://github.com/cicdTrainer/calculator.git'
       mvnHome = tool 'maven'
    }
    stage('Compile') {
