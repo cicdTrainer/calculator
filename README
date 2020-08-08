@@ -364,6 +364,9 @@ Continuous Deployment of a war file into a Running Tomcat WebServer via Jenkins 
             2.2.2.5 Tomcat URL: http://localhost:70780 [please modify IP/PORT according to your tomcat location]
             2.2.2.6 Choose Advance
                 2.2.2.6.1 /manager/text
+            2.2.2.7 Cridential, choose Jenkins provider / Add
+                    username: admin
+                    password: admin
      2.3 Save
      2.4 Build Job
   3- Go to browser
