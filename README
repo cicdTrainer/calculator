@@ -373,6 +373,16 @@ Continuous Deployment of a war file into a Running Tomcat WebServer via Jenkins 
      3.1 http://localhost:7080/demo1/users/1 [hit]   
             
     
-    
+Jenkins Pipeline build for a Web Application:
+============================================
+1- Manually set the pipeline script:
+    node {
+   stage('Prepare') {
+      git 'https://github.com/cicdTrainer/spring-boot-demo.git'
+   }
+   stage('Compile') {
+         sh "'/usr/bin/mvn' -Dmaven.test.failure.ignore clean compile"
+   }
+}
     
     
