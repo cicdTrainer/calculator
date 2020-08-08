@@ -384,5 +384,10 @@ Jenkins Pipeline build for a Web Application:
          sh "'/usr/bin/mvn' -Dmaven.test.failure.ignore clean compile"
    }
 }
-    
+   
+   
+   Master/Slave:
+   =============
+   1- 
+   1- sudo java -jar agent.jar -jnlpUrl http://localhost:8080/computer/test/slave-agent.jnlp -secret fef4874372892b1f433b4356ef2aa5cef09d3dbd52cef61dff314be99448f381 -workDir "/var/jenkins" 
     
