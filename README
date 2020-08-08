@@ -327,4 +327,9 @@ Setup the Artifactory plugin in project's pom.xml file
 ===========================
 Spring boot Web Application
 ===========================
-1- https://start.spring.io
+1- Download the Spring boot Application: https://github.com/cicdTrainer/spring-boot-demo
+2- Clone the project from Git client
+    2.1 git clone https://github.com/cicdTrainer/spring-boot-demo.git
+    2.2 cd spring-boot-demo/
+    2.3 mvn clean package
+    
