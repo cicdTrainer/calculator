@@ -1,3 +1,4 @@
+=====================
 Jenkin Service Status:
 =====================
 1- sudo systemctl status jenkins
@@ -6,13 +7,14 @@ Jenkin Service Status:
 
 ==================================
 Jenkins Installation via WAR file: 
-[Final Installation: https- //www.jenkins.io/doc/book/installing/]
 ==================================
-- Download: https://www.jenkins.io/doc/book/installing/
-- Terminal:
+- Complete Installation Guide: https- //www.jenkins.io/doc/book/installing/
+- Download Jenkins war file: http://mirror.serverion.com/jenkins/war-stable/2.235.3/jenkins.war
+- Go to Terminal:
     - cd Download
     - java -jar jenkins.war
-
+    - http://localhost:8080
+    
 ==============================
 Maven Home path set in Jenkins:
 ==============================
@@ -354,7 +356,7 @@ Spring boot Web Application
         3.4.1 http://localhost:7080/webappdemo/users/1
                 3.4.1.1 Response: {"id":2,"name":"John","nicknames":["jonny"],"age":26,"email":"john@xyz.com"}
                 
-                
+====================================================================================                
 Continuous Deployment of a war file into a Running Tomcat WebServer via Jenkins Job:
 ====================================================================================
  1- Go to Manage Plugins
@@ -381,19 +383,36 @@ Continuous Deployment of a war file into a Running Tomcat WebServer via Jenkins 
   3- Go to browser
      3.1 http://localhost:7080/demo1/users/1 [hit]   
             
-    
+============================================    
 Jenkins Pipeline build for a Web Application:
 ============================================
-1- Manually set the pipeline script:
+1- Go to new item
+2- Choose Pipeline template
+3- Choose SCM integration and select Git
+    3.1- Copy repo: https://github.com/cicdTrainer/spring-boot-demo.git
+    3.2- Jenkinsfile [let me it the default pipeline script file name]
+        3.2.1- If you want to check the pipeline flow, please see it: https://github.com/cicdTrainer/spring-boot-demo/blob/master/Jenkinsfile
+4- Save
+5- Go to that item and build
+6- You will able to see the all stages in graphical way.
+
+===========================================    
+Jenkins Pipeline build for a Simple compile:
+===========================================
+1- Go to new item
+2- Choose Pipeline template
+3- Go to script section and manually copy the above pipeline script:
     node {
-   stage('Prepare') {
-      git 'https://github.com/cicdTrainer/spring-boot-demo.git'
-   }
-   stage('Compile') {
-      sh "'/usr/bin/mvn' -Dmaven.test.failure.ignore clean compile"
-   }
-}
-   
+       stage('Prepare') {
+          git 'https://github.com/cicdTrainer/spring-boot-demo.git'
+       }
+       stage('Compile') {
+          sh "'/usr/bin/mvn' -Dmaven.test.failure.ignore clean compile"
+       }
+    }
+4- Save
+5- Go to job and build
+
 =============   
 Master/Slave:
 =============
