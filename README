@@ -3,7 +3,16 @@ Jenkin Service Status:
 1- sudo systemctl status jenkins
     1.1- If it is not running
         1.1.1 sudo systemctl start jenkins
-        
+
+==================================
+Jenkins Installation via WAR file: 
+[Final Installation: https- //www.jenkins.io/doc/book/installing/]
+==================================
+- Download: https://www.jenkins.io/doc/book/installing/
+- Terminal:
+    - cd Download
+    - java -jar jenkins.war
+
 ==============================
 Maven Home path set in Jenkins:
 ==============================
@@ -381,16 +390,33 @@ Jenkins Pipeline build for a Web Application:
       git 'https://github.com/cicdTrainer/spring-boot-demo.git'
    }
    stage('Compile') {
-         sh "'/usr/bin/mvn' -Dmaven.test.failure.ignore clean compile"
+      sh "'/usr/bin/mvn' -Dmaven.test.failure.ignore clean compile"
    }
 }
    
-   
-   Master/Slave:
-   =============
-   1- sudo java -jar agent.jar -jnlpUrl http://localhost:8080/computer/test/slave-agent.jnlp -secret fef4874372892b1f433b4356ef2aa5cef09d3dbd52cef61dff314be99448f381 -workDir "/var/jenkins" 
-   2- To run a pipeline stage into a slave node:
-   pipeline {
+=============   
+Master/Slave:
+=============
+1- Go to Jenkin Home Page
+2- Go to Manage Nodes
+3- Add Node
+4- Name/Level : test
+5- Select Connect Master vai Websoket
+6- Save
+7- Clink on Test Node
+8- Download agent.jar [it is hyper link, hover over agent.jar]
+9- Copy the `java -jar ...` command display on page.
+    - Ex: sudo java -jar agent.jar -jnlpUrl http://localhost:8080/computer/test/slave-agent.jnlp -secret fef4874372892b1f433b4356ef2aa5cef09d3dbd52cef61dff314be99448f381 -workDir "/var/jenkins" 
+10- Go to slave machine and open termianl and run the `java -jar ...` command
+11- Check the terminal/console log. At last it should log `connected`.
+12- Check Manager node page again. Now there is no red mark in test node.
+
+===============================================
+Step up Pipeline which run on `test` slave node:
+===============================================
+1- Create a new item using pipeline template.
+2- Go to script section and copy the below script [ agent {label 'test'} is the conf which uses for Node selection to excute a pipeline]
+ pipeline {
   agent any
   stages {
     stage('Stage 1') {
